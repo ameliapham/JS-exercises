@@ -1,0 +1,12 @@
+{
+  "name": "jv-exercises",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ameliapham/JS-exercises.git",
+  "author": "ameliapham <ptt.huong.8895@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start-ex1": "node convert-C-to-F/script.js",
+    "start-ex2": "node reverse-string/script.js"
+  }
+}
