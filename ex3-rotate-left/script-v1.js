@@ -3,17 +3,17 @@ function rotateLeft(d, arr) {
     const result = []
 
     for (let i = 0; i<arr.length; i++){
-        let i2 = i
+        let newPosition = i
 
         for (j = 0; j<d; j++){
-            i2++
+            newPosition++
 
-            if (i2 > arr.length - 1){
-                i2 = 0
+            if (newPosition > arr.length - 1){
+                newPosition = 0
             } 
         }
 
-        result[i] = arr[i2] 
+        result[i] = arr[newPosition] // Gán giá trị trực tiếp từ mảng arr lần lượt vào vị trí tương ứng trong mảng result
     }
 return result
 }
