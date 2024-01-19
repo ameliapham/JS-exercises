@@ -6,7 +6,8 @@
   "author": "ameliapham <ptt.huong.8895@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start-ex1": "node convert-C-to-F/script.js",
-    "start-ex2": "node reverse-string/script.js"
+    "start-ex1": "node ex1-convert-C-to-F/script.js",
+    "start-ex2": "node ex2-reverse-string/script.js",
+    "start-ex3": "node ex3-rotate-left/script.js"
   }
 }
