@@ -13,8 +13,7 @@
     "start-ex4": "node ex4-factorialize-number/script.js",
     "start-ex5": "node ex5-return-largest-numbers/script.js",
     "start-ex6": "node ex6-longest-word-length/script.js",
-    "start-ex7": "node ex7-end-of-string/script.js"
-
-
+    "start-ex7-v1": "node ex7-end-of-string/script-v1.js",
+    "start-ex7-v2": "node ex7-end-of-string/script-v2.js"
   }
 }

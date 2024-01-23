@@ -11,6 +11,5 @@ function confirmEnding(str, target){
     }
 }
 
-
-
-confirmEnding("He has to give me a new name", "name")
+const x = confirmEnding("He has to give me a new name", "name")
+console.log(x)
