@@ -15,6 +15,8 @@
     "start-ex6": "node ex6-longest-word-length/script.js",
     "start-ex7-v1": "node ex7-end-of-string/script-v1.js",
     "start-ex7-v2": "node ex7-end-of-string/script-v2.js",
-    "start-ex8": "node ex8-repeat-string/script.js"
+    "start-ex8-v1": "node ex8-repeat-string/script-v1.js",
+    "start-ex8-v2": "node ex8-repeat-string/script-v2.js"
+
   }
 }
