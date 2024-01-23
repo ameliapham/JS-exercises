@@ -18,7 +18,8 @@
     "start-ex8-v1": "node ex8-repeat-string/script-v1.js",
     "start-ex8-v2": "node ex8-repeat-string/script-v2.js",
     "start-ex9-v1": "node ex9-truncate-string/script-v1.js",
-    "start-ex9-v2": "node ex9-truncate-string/script-v2.js"
+    "start-ex9-v2": "node ex9-truncate-string/script-v2.js",
+    "start-ex10": "node ex10-check-typeof/script.js"
 
   }
 }
