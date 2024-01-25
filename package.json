@@ -22,8 +22,7 @@
     "start-ex10": "node ex10-check-typeof/script.js",
     "start-ex11": "node ex11-capitaliser/script.js",
     "start-ex12-v1": "node ex12-slice-and-splice/script-v1.js",
-    "start-ex12-v2": "node ex12-slice-and-splice/script-v2.js"
-
-
+    "start-ex12-v2": "node ex12-slice-and-splice/script-v2.js",
+    "start-ex14": "node ex14-circular-printer-wheel/script.js"
   }
 }
