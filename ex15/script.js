@@ -21,4 +21,15 @@ function getIndexToIns(arr, num){
         return sortedArr.length
     }
 
+    // Find the index where num should be inserted
+    for(let i=0; i<sortedArr.length; i++){
+        if(sortedArr[i]>= num){
+            return sortedArr[i]
+        }
+    }
 }
+
+//const x = getIndexToIns([2, 5, 10], 15);
+//const y = getIndexToIns([70, 20, 55, 40, 50], 40);
+const z = getIndexToIns([], 1)
+console.log(z)
