@@ -26,7 +26,8 @@
     "start-ex13": "node ex13-falsy-bouncer/script.js",
     "start-ex14": "node ex14-circular-printer-wheel/script.js",
     "start-ex15-v1": "node ex15/script-v1.js",
-    "start-ex15-v2": "node ex15/script-v2.js"
+    "start-ex15-v2": "node ex15/script-v2.js",
+    "start-ex16": "node ex16-window-tabs-generator/script.js"
 
 
   }
