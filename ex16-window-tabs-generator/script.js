@@ -8,3 +8,9 @@ Window.prototype.join = function(otherWindow){
     this.tabs = this.tabs.concat(otherWindow.tabs)
     return this
 }
+
+// Open new tab
+Window.prototype.tabOpen = function(tab){
+    this.tabs.push('new tab')
+    return this
+}
