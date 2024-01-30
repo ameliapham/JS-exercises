@@ -2,3 +2,9 @@
 const Window = function(tabs){ // Construction function for Window
     this.tabs = tabs 
 }
+
+// Merge two window
+Window.prototype.join = function(otherWindow){
+    this.tabs = this.tabs.concat(otherWindow.tabs)
+    return this
+}
