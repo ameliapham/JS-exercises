@@ -22,3 +22,15 @@ Window.prototype.tabClose = function(index){
     this.tabs = tabsBeforeIndex.concat(tabAfterIndex)
     return this
 }
+
+// Create three browser windows
+const workWindow = new Window(['GMail', 'Inbox', 'Work mail', 'Docs', 'freeCodeCamp'])
+const socialWindow = new Window(['FB', 'Gitter', 'Reddit', 'Twitter', 'Medium'])
+const videoWindow = new Window(['Netflix', 'YouTube', 'Vimeo', 'Vine'])
+
+const finalTabs = socialWindow
+    .tabOpen()
+    .join(videoWindow.tabClose(2))
+    .join(workWindow.tabClose(1).tabOpen())
+
+console.log(finalTabs)
