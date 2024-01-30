@@ -27,7 +27,8 @@
     "start-ex14": "node ex14-circular-printer-wheel/script.js",
     "start-ex15-v1": "node ex15/script-v1.js",
     "start-ex15-v2": "node ex15/script-v2.js",
-    "start-ex16": "node ex16-window-tabs-generator/script.js"
+    "start-ex16": "node ex16-window-tabs-generator/script.js",
+    "start-ex17": "node ex17-immutable-booklist/script.js"
 
 
   }
