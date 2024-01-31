@@ -6,6 +6,7 @@
   "author": "ameliapham <ptt.huong.8895@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start-ex0": "node ex0-fundamentals-of-functional-programming/test.js",
     "start-ex1": "node ex1-convert-C-to-F/script.js",
     "start-ex2": "node ex2-reverse-string/script.js",
     "start-ex3-v1": "node ex3-rotate-left/script-v1.js",
