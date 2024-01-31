@@ -29,6 +29,8 @@
     "start-ex15-v1": "node ex15-get-index-to-ins/script-v1.js",
     "start-ex15-v2": "node ex15-get-index-to-ins/script-v2.js",
     "start-ex16": "node ex16-window-tabs-generator/script.js",
-    "start-ex17": "node ex17-immutable-booklist/script.js"
+    "start-ex17": "node ex17-immutable-booklist/script.js",
+    "start-ex18-v1": "node ex18-extract-data-from-array/script-v1.js"
+
   }
 }
