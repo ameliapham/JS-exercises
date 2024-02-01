@@ -104,7 +104,7 @@ const watchList = [
     "Awards": "Won 3 Oscars. Another 80 wins & 121 nominations.",
     "Poster": "http://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg",
     "Metascore": "83",
-    "imdbRating": "7.9",
+    "imdbRating": "7.5",
     "imdbVotes": "876,575",
     "imdbID": "tt0499549",
     "Type": "movie",
@@ -118,6 +118,8 @@ const watchList = [
   return {title: movie.Title, rating: movie.imdbRating}
 })*/
 
-const ratings = watchList.map(movie => ({title: movie.Title, rating: movie.imdbRating}))
+const ratings = watchList
+  .map(movie => ({ title: movie.Title, rating: movie.imdbRating }))
+  .filter(rate => rate.rating >= 8.0)
 
 console.log(JSON.stringify(ratings));
