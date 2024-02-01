@@ -144,13 +144,14 @@ function getRating(watchList, director) {
   const filtedMovie = watchList
     .filter(movie => movie.Director === director)
     .map(imdb => parseFloat(imdb.imdbRating))
-
   //console.log(filtedMovie)
 
   const sum = filtedMovie.reduce((acc, curr) => acc + curr, 0)
   //console.log(sum)
 
-  return averageRating = sum / filtedMovie.length
+  const averageRating = sum / filtedMovie.length
+
+  return averageRating
 }
 
 const x = getRating(watchList, "Christopher Nolan")
