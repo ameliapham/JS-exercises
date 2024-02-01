@@ -1,6 +1,7 @@
 // Sorting number by ascending order
 function ascendingOrder(arr) {
-    return arr.sort((a,b) => a-b);
+    // return arr.sort((a,b) => a-b);
+    return arr.sort();
 }
 
 const x = ascendingOrder([1, 5, 2, 3, 4]);
