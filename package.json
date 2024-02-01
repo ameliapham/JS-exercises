@@ -8,7 +8,8 @@
   "scripts": {
     "start-ex0": "node ex0-fundamentals-of-functional-programming/test.js",
     "start-ex1": "node ex1-convert-C-to-F/script.js",
-    "start-ex2": "node ex2-reverse-string/script.js",
+    "start-ex2-v1": "node ex2-reverse-string/script-v1.js",
+    "start-ex2-v2": "node ex2-reverse-string/script-v2.js",
     "start-ex3-v1": "node ex3-rotate-left/script-v1.js",
     "start-ex3-v2": "node ex3-rotate-left/script-v2.js",
     "start-ex4": "node ex4-factorialize-number/script.js",
