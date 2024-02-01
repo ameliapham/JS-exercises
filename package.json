@@ -33,7 +33,8 @@
     "start-ex17": "node ex17-immutable-booklist/script.js",
     "start-ex18-v1": "node ex18-extract-data-from-array/script-v1.js",
     "start-ex18-v2": "node ex18-extract-data-from-array/script-v2.js",
-    "start-ex19": "node ex19-squared-integers/script.js"
+    "start-ex19": "node ex19-squared-integers/script.js",
+    "start-ex20-v1": "node ex20-sorts-elements/sortNumber.js"
 
   }
 }
