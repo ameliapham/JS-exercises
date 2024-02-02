@@ -5,7 +5,7 @@
  */
 
 function urlSlug(title) {
-
+    /*
     // Spliting string to arr
     const splitedArr = title
         .trim() // " A Mind Needs Books Like    A Sword Needs A Whetstone" -> "A Mind Needs Books Like    A Sword Needs A Whetstone"
@@ -18,7 +18,15 @@ function urlSlug(title) {
     const joinedArr = lowerCaseArr.join("-")
 
     return joinedArr
+    */
+
+    return title
+        .trim() // " A Mind, Needs Books Like    A Sword Needs A Whetstone" -> "A Mind, Needs Books Like    A Sword Needs A Whetstone"
+        .split(/\s+|,\s*/) // "A Mind, Needs Books Like    A Sword Needs A Whetstone" -> ["A","Mind","Needs","Books","Like","A","Sword","Needs","A","Whetstone"]
+        .map(char => char.toLowerCase()) // ["A","Mind","Needs","Books","Like","A","Sword","Needs","A","Whetstone"] -> ["a","mind","needs","books","like","a","sword","needs","a","whetstone"]
+        .join("-") // ["a","mind","needs","books","like","a","sword","needs","a","whetstone"] -> "a-mind-needs-books-like-a-sword-needs-a-whetstone"
+
 }
 
-const x = urlSlug(" A Mind Needs Books Like    A Sword Needs A Whetstone")
+const x = urlSlug(" A Mind, Needs Books Like    A Sword Needs A Whetstone")
 console.log(x)
