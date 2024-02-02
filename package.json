@@ -36,8 +36,8 @@
     "start-ex19": "node ex19-squared-integers/script.js",
     "start-ex20-v1": "node ex20-sorts-elements/sortNumber.js",
     "start-ex20-v2": "node ex20-sorts-elements/sortCharacters.js",
-    "start-ex21": "node ex21-convert-string-to-url-slugs/script.js"
-
+    "start-ex21": "node ex21-convert-string-to-url-slugs/script.js",
+    "start-ex22": "node ex22-currying-and-partial-application/script.js"
     
 
   }
