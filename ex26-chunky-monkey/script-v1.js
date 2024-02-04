@@ -3,10 +3,10 @@
 function chunkArrayInGroups(arr, size) {
     let newArr = []
 
-    for (let i = 0; i < arr.length; i += size) {
-        let sliceArr = arr.slice(i, i + size)
-        newArr.push(sliceArr)
-    }
+        for (let i = 0; i < arr.length; i += size) {
+            let sliceArr = arr.slice(i, i + size)
+            newArr.push(sliceArr)
+        }
 
     return newArr
 }

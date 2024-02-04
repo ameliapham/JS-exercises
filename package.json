@@ -42,7 +42,9 @@
     "start-ex24": "node ex24-count-online/script.js",
     "start-ex25-v1": "node ex25-mutations/script-v1.js",
     "start-ex25-v2": "node ex25-mutations/script-v2.js",
-    "start-ex26": "node ex26-chunky-monkey/script.js"
+    "start-ex26-v1": "node ex26-chunky-monkey/script-v1.js",
+    "start-ex26-v2": "node ex26-chunky-monkey/script-v2.js"
+
 
   }
 }
