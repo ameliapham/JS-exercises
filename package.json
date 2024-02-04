@@ -40,10 +40,8 @@
     "start-ex22": "node ex22-currying-and-partial-application/script.js",
     "start-ex23": "node ex23-check-presence/script.js",
     "start-ex24": "node ex24-count-online/script.js",
-    "start-ex25-v1": "node ex25-mutations/script-v1.js"
-
-
-    
+    "start-ex25-v1": "node ex25-mutations/script-v1.js",
+    "start-ex25-v2": "node ex25-mutations/script-v2.js"
 
   }
 }
