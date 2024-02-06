@@ -11,6 +11,9 @@ Cat.prototype = {
     },
     describe: function(){
         console.log(`My name is ${this.name}`)
+    },
+    meow: function(){
+        console.log("meow meow meow")
     }
 }
 
@@ -37,8 +40,10 @@ Dog.prototype = {
     },
     describe: function(){
         console.log(`My name is ${this.name}`)
+    },
+    bark: function(){
+        console.log("woof woof woof")
     }
 }
 
 const collie = new Dog("Jun")
-
