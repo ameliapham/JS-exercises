@@ -1,3 +1,4 @@
+// Constructor function Cat
 function Cat(name){
     this.name = name
 }
@@ -17,13 +18,13 @@ const birman = new Cat("Shiny")
 const bombay = new Cat("Bomb")
 
 console.log(bombay.constructor === Cat)
-// console.log(bombay instanceof Cat)
+console.log(bombay instanceof Cat)
 console.log(Cat.prototype.isPrototypeOf(birman))
 
 birman.describe()
 
 
-
+// Constructor function Dog
 function Dog(name){
     this.name = name
 }
