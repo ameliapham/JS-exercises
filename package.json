@@ -43,7 +43,8 @@
     "start-ex25-v1": "node ex25-mutations/script-v1.js",
     "start-ex25-v2": "node ex25-mutations/script-v2.js",
     "start-ex26-v1": "node ex26-chunky-monkey/script-v1.js",
-    "start-ex26-v2": "node ex26-chunky-monkey/script-v2.js"
+    "start-ex26-v2": "node ex26-chunky-monkey/script-v2.js",
+    "start-ex27": "node ex27-constructor-function/script.js"
 
 
   }
