@@ -13,5 +13,8 @@ Cat.prototype = {
 }
 
 const birman = new Cat("Shiny")
+const bombay = new Cat("Bomb")
+
+console.log(bombay instanceof Cat)
 
 console.log(birman.describe())
