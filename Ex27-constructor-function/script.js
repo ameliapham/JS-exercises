@@ -18,5 +18,6 @@ const bombay = new Cat("Bomb")
 
 console.log(bombay.constructor === Cat)
 // console.log(bombay instanceof Cat)
+console.log(Cat.prototype.isPrototypeOf(birman))
 
 birman.describe()
