@@ -19,4 +19,4 @@ const bombay = new Cat("Bomb")
 console.log(bombay.constructor === Cat)
 // console.log(bombay instanceof Cat)
 
-console.log(birman.describe())
+birman.describe()
