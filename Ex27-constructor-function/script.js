@@ -12,17 +12,22 @@ Animal.prototype = {
     }
 }
 
+// ----------------------------------------------
 // Constructor function Cat
 function Cat(name){
     this.name = name
 }
 
-Cat.prototype = {
-    constructor: Cat,
+// Establish inheritance
+Cat.prototype = Object.create(Animal.prototype)
+Cat.prototype.constructor = Cat
+
+// Add additional properties
+Object.assign(Cat.prototype, {
     meow: function(){
         console.log("meow meow meow")
     }
-}
+})
 
 let bombay = new Cat("Bomb")
 
@@ -32,17 +37,22 @@ console.log(Cat.prototype.isPrototypeOf(bombay))
 
 bombay.describe()
 
-
+// ----------------------------------------------
 // Constructor function Dog
 function Dog(name){
     this.name = name
 }
 
-Dog.prototype = {
-    constructor: Dog,
+// Establish inheritance
+Dog.prototype = Object.create(Animal.prototype)
+Dog.prototype.constructor = Dog
+
+// Add additional properties
+Object.assign(Dog.prototype, {
     bark: function(){
         console.log("woof woof woof")
     }
-}
+})
 
 const collie = new Dog("Jun")
+collie.bark()
