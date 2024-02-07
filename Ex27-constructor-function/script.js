@@ -80,3 +80,15 @@ Moto.prototype = {
 
 const monkeyBike = new Moto("monkey", "yamaha")
 
+// ----------------------------------------------
+// Mixin function
+let runMixin = function(obj){
+    obj.prototype.run = function(){
+        console.log("Maximum speed !")
+    }
+}
+runMixin(Moto)
+runMixin(Cat)
+
+monkeyBike.run()
+bombay.run()
