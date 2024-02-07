@@ -1,26 +1,26 @@
 // Constructor function Animal
-function Animal(){}
+function Animal() { }
 
 Animal.prototype = {
     constructor: Animal,
     numLegs: 4,
-    eat: function(){
+    eat: function () {
         console.log("miam miam miam")
     },
-    describe: function(){
+    describe: function () {
         console.log(`My name is ${this.name}`)
     }
 }
 
 // ----------------------------------------------
 // Constructor function Cat
-function Cat(name){
+function Cat(name) {
     this.name = name
 
     // Create a private variable
     let owner = "Huong"
 
-    this.getOwner = function(){
+    this.getOwner = function () {
         return owner
     }
 }
@@ -31,7 +31,7 @@ Cat.prototype.constructor = Cat
 
 // Add additional properties
 Object.assign(Cat.prototype, {
-    meow: function(){
+    meow: function () {
         console.log("meow meow meow")
     }
 })
@@ -48,7 +48,7 @@ console.log(bombay.getOwner())
 
 // ----------------------------------------------
 // Constructor function Dog
-function Dog(name){
+function Dog(name) {
     this.name = name
 }
 
@@ -58,13 +58,13 @@ Dog.prototype.constructor = Dog
 
 // Add additional properties
 Object.assign(Dog.prototype, {
-    bark: function(){
+    bark: function () {
         console.log("woof woof woof")
     }
 })
 
 // Override inherited methods
-Dog.prototype.eat = function() {
+Dog.prototype.eat = function () {
     console.log("nom nom nom")
 }
 
@@ -74,14 +74,14 @@ collie.eat()
 
 // ----------------------------------------------
 // Constructor function Moto
-function Moto(name, model){
+function Moto(name, model) {
     this.name = name,
-    this.model = model
+        this.model = model
 }
 
 Moto.prototype = {
     constructor: Moto,
-    start: function(){
+    start: function () {
         console.log("Let's go !")
     }
 }
@@ -90,24 +90,28 @@ const monkeyBike = new Moto("monkey", "yamaha")
 
 // ----------------------------------------------
 // Mixin function
-let runMixin = function(obj){
-    obj.prototype.run = function(){
-        console.log("Maximum speed !")
+let motionModule = (function () {
+    return {
+        runMixin: function (obj) {
+            obj.prototype.run = function () {
+                console.log("Maximum speed !")
+            }
+        },
+        brakeMixin: function (obj) {
+            obj.prototype.brake = function () {
+                console.log("Brake before falling !")
+            }
+        }
     }
-}
-runMixin(Moto)
-runMixin(Cat)
+})()
+
+
+motionModule.runMixin(Moto)
+motionModule.runMixin(Cat)
+
+motionModule.brakeMixin(Moto)
+motionModule.brakeMixin(Cat)
 
 monkeyBike.run()
 bombay.run()
-
-let brakeMixin = function(obj){
-    obj.prototype.brake = function(){
-        console.log("Brake before falling !")
-    }
-}
-
-brakeMixin(Moto)
-brakeMixin(Cat)
-
 bombay.brake()
