@@ -9,8 +9,8 @@ function diffArray(arr1, arr2) {
         }
     }
 
-    diff(arr1, arr2)
-    diff(arr2, arr1)
+    diff(arr1, arr2) // [] -> [6, 7]
+    diff(arr2, arr1) // [6, 7] -> [6, 7, 4]
 
     return newArr
 }
