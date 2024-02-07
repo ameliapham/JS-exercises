@@ -36,6 +36,7 @@ console.log(bombay instanceof Cat)
 console.log(Cat.prototype.isPrototypeOf(bombay))
 
 bombay.describe()
+bombay.eat()
 
 // ----------------------------------------------
 // Constructor function Dog
@@ -54,5 +55,11 @@ Object.assign(Dog.prototype, {
     }
 })
 
+// Override inherited methods
+Dog.prototype.eat = function() {
+    console.log("nom nom nom")
+}
+
 const collie = new Dog("Jun")
 collie.bark()
+collie.eat()
