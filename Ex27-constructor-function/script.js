@@ -16,6 +16,13 @@ Animal.prototype = {
 // Constructor function Cat
 function Cat(name){
     this.name = name
+
+    // Create a private variable
+    let owner = "Huong"
+
+    this.getOwner = function(){
+        return owner
+    }
 }
 
 // Establish inheritance
@@ -29,7 +36,7 @@ Object.assign(Cat.prototype, {
     }
 })
 
-let bombay = new Cat("Bomb")
+let bombay = new Cat("Shiny")
 
 console.log(bombay.constructor === Cat)
 console.log(bombay instanceof Cat)
@@ -37,6 +44,7 @@ console.log(Cat.prototype.isPrototypeOf(bombay))
 
 bombay.describe()
 bombay.eat()
+console.log(bombay.getOwner())
 
 // ----------------------------------------------
 // Constructor function Dog
