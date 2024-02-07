@@ -46,7 +46,8 @@
     "start-ex26-v2": "node ex26-chunky-monkey/script-v2.js",
     "start-ex27": "node ex27-constructor-function/script.js",
     "start-ex28-v1": "node ex28-diff-two-array/script-v1.js",
-    "start-ex28-v2": "node ex28-diff-two-array/script-v2.js"
+    "start-ex28-v2": "node ex28-diff-two-array/script-v2.js",
+    "start-ex29": "node ex29-seek-and-destroy/script.js"
 
   }
 }
