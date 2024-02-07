@@ -63,3 +63,20 @@ Dog.prototype.eat = function() {
 const collie = new Dog("Jun")
 collie.bark()
 collie.eat()
+
+// ----------------------------------------------
+// Constructor function Moto
+function Moto(name, model){
+    this.name = name,
+    this.model = model
+}
+
+Moto.prototype = {
+    constructor: Moto,
+    start: function(){
+        console.log("Let's go !")
+    }
+}
+
+const monkeyBike = new Moto("monkey", "yamaha")
+
