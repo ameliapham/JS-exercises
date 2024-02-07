@@ -100,3 +100,14 @@ runMixin(Cat)
 
 monkeyBike.run()
 bombay.run()
+
+let brakeMixin = function(obj){
+    obj.prototype.brake = function(){
+        console.log("Brake before falling !")
+    }
+}
+
+brakeMixin(Moto)
+brakeMixin(Cat)
+
+bombay.brake()
