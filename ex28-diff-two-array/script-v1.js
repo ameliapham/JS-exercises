@@ -1,5 +1,16 @@
-function diffArray(arr1, arr2){
+function diffArray(arr1, arr2) {
     let newArr = []
+
+    function diff(first, second) {
+        for (let i = 0; i < first.length; i++) {
+            if (!second.includes(first[i])) {
+                newArr.push(first[i])
+            }
+        }
+    }
+
+    diff(arr1, arr2)
+    diff(arr2, arr1)
 
     return newArr
 }
