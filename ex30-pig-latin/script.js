@@ -8,7 +8,18 @@ function translatePigLatin(str) {
     if (str[0].match(/[aeiou]/)) {
         return str + "way"
     }
+    
+    // If the word begins with a consonnant, find the first vowel and then reconstruct the word in Pig Latin format
+    else {
+        for (let i = 0; i < str.length; i++) {
+            if (str[i].match(/[aeiou]/)) {
+                let beforeVowel = str.slice(0, i)
+                let afterVowel = str.slice(i)
 
+                return afterVowel + beforeVowel + "ay"
+            }
+        }
+    }
 
     return str;
 }
