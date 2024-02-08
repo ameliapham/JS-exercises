@@ -4,6 +4,12 @@ function translatePigLatin(str) {
         return str + "ay"
     }
 
+    // If the word begins with a vowel, add "ay" at the end
+    if (str[0].match(/[aeiou]/)) {
+        return str + "way"
+    }
+
+
     return str;
 }
 
