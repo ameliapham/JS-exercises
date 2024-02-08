@@ -1,13 +1,10 @@
 function translatePigLatin(str) {
     // Check if the word contains vowels. If not, add "ay" at the end
-    if (!str.match(/[aeiou]/)) {
-        return str + "ay"
-    }
+    if (!str.match(/[aeiou]/)) return str + "ay"
 
     // If the word begins with a vowel, add "ay" at the end
-    if (str[0].match(/[aeiou]/)) {
-        return str + "way"
-    }
+    if (str[0].match(/[aeiou]/)) return str + "way"
+    
     
     // If the word begins with a consonnant, find the first vowel and then reconstruct the word in Pig Latin format
     else {
@@ -20,8 +17,6 @@ function translatePigLatin(str) {
             }
         }
     }
-
-    return str;
 }
 
 const x = translatePigLatin("schwartz") // -> artzschway
