@@ -1,7 +1,7 @@
 function uniteUnique(...arr) {
     
-    const newArr = [].concat(...arr)
-
+    // const newArr = [].concat(...arr)
+    const newArr = [...arr].flat()
     return  newArr.filter((elem, i, arr) => arr.indexOf(elem) === i)
 }
 
